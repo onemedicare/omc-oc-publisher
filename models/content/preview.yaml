@@ -1,0 +1,85 @@
+fields:
+    title:
+        label: Title
+        oc.commentPosition: ''
+        span: full
+        type: text
+    body:
+        label: 'Content Body'
+        size: huge
+        oc.commentPosition: ''
+        span: full
+        type: richeditor
+tabs:
+    fields:
+        type:
+            label: 'Content Type'
+            oc.commentPosition: ''
+            options:
+                article: Article
+                news: News
+                blog: 'Blog Post'
+                event: Event
+            span: left
+            type: dropdown
+            tab: Details
+        tags:
+            label: Tags
+            span: left
+            type: suilabel
+            # mode: relation
+            tab: Details
+        author:
+            label: Author
+            oc.commentPosition: ''
+            span: left
+            type: text
+            tab: Details
+secondaryTabs:
+    fields:
+        is_approved:
+            label: 'Approved?'
+            span: auto
+            type: switch
+            tab: Publishing
+        is_published:
+            label: 'Published?'
+            span: left
+            type: switch
+            tab: Publishing
+        approved_date:
+            label: 'Approved Date'
+            oc.commentPosition: ''
+            mode: datetime
+            span: left
+            type: datepicker
+            tab: Publishing
+        approved_by:
+            label: 'Approved By'
+            oc.commentPosition: ''
+            span: auto
+            type: text
+            tab: Publishing
+        published_date:
+            label: 'Published Date'
+            oc.commentPosition: ''
+            mode: datetime
+            span: auto
+            type: datepicker
+            tab: Publishing
+        expiry_date:
+            label: 'Expiry Date'
+            oc.commentPosition: ''
+            mode: datetime
+            span: auto
+            type: datepicker
+            tab: Publishing
+        feature_img:
+            label: 'Featured Image'
+            oc.commentPosition: ''
+            mode: image
+            span: full
+            type: mediafinder
+            tab: Publishing
+            imageHeight: 460
+            imageWidth: 460

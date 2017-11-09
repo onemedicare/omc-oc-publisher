@@ -1,0 +1,17 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table omc_publisher_contents'
+    - builder_table_create_omc_publisher_contents.php
+1.0.3:
+    - 'Created table omc_publisher_tags'
+    - builder_table_create_omc_publisher_tags.php
+1.0.4:
+    - 'Updated table omc_publisher_contents'
+    - builder_table_update_omc_publisher_contents.php
+1.0.5:
+    - 'Created table omc_publisher_content_tag'
+    - builder_table_create_omc_publisher_content_tag.php
+1.0.6:
+    - 'Created table omc_publisher_feedbacks'
+    - builder_table_create_omc_publisher_feedbacks.php

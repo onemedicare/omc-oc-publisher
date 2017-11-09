@@ -1,0 +1,26 @@
+columns:
+    title:
+        label: Title
+        type: text
+        searchable: true
+        sortable: true
+    type:
+        label: Type
+        type: text
+        searchable: true
+        sortable: true
+    is_published:
+        label: 'Published?'
+        type: switch
+        searchable: false
+        sortable: false
+    status:
+        label: Status
+        type: text
+        searchable: true
+        sortable: true
+    author:
+        label: Author
+        type: text
+        searchable: true
+        sortable: true

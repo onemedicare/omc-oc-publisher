@@ -1,0 +1,14 @@
+name: Contents
+form: $/omc/publisher/models/content/fields.yaml
+modelClass: Omc\Publisher\Models\Content
+defaultRedirect: omc/publisher/contents
+create:
+    redirect: 'omc/publisher/contents/update/:id'
+    redirectClose: omc/publisher/contents
+update:
+    redirect: omc/publisher/contents
+    redirectClose: omc/publisher/contents
+preview:
+    redirect: omc/publisher/contents
+    redirectClose: omc/publisher/contents
+    form: $/omc/publisher/models/content/preview.yaml

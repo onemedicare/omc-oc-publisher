@@ -1,0 +1,10 @@
+name: Tags
+form: $/omc/publisher/models/tag/fields.yaml
+modelClass: Omc\Publisher\Models\Tag
+defaultRedirect: omc/publisher/tags
+create:
+    redirect: 'omc/publisher/tags/update/:id'
+    redirectClose: omc/publisher/tags
+update:
+    redirect: omc/publisher/tags
+    redirectClose: omc/publisher/tags

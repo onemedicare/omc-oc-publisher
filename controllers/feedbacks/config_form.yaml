@@ -1,0 +1,10 @@
+name: Feedbacks
+form: $/omc/publisher/models/feedback/fields.yaml
+modelClass: Omc\Publisher\Models\Feedback
+defaultRedirect: omc/publisher/feedbacks
+create:
+    redirect: 'omc/publisher/feedbacks/update/:id'
+    redirectClose: omc/publisher/feedbacks
+update:
+    redirect: omc/publisher/feedbacks
+    redirectClose: omc/publisher/feedbacks

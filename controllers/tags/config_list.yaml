@@ -1,0 +1,11 @@
+title: Tags
+modelClass: Omc\Publisher\Models\Tag
+list: $/omc/publisher/models/tag/columns.yaml
+recordUrl: 'omc/publisher/tags/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

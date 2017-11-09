@@ -1,0 +1,66 @@
+<p>
+    <div class="scoreboard">
+        <div data-control="toolbar">
+            <div class="scoreboard-item control-chart" data-control="chart-pie">
+                <ul>
+                    <li data-color="#95b753">Published <span>84</span></li>
+                    <li data-color="#e5a91a">Drafts <span>12</span></li>
+                    <li data-color="#cc3300">Deleted <span>18</span></li>
+                </ul>
+            </div>
+            
+            <div class="scoreboard-item control-chart" data-control="chart-pie">
+                <ul>
+                    <li data-color="#95b753">News <span>84</span></li>
+                    <li data-color="#e5a91a">Articles <span>12</span></li>
+                </ul>
+            </div>
+    
+            <div class="scoreboard-item title-value">
+                <h4>This Month</h4>
+                <p>100</p>
+                <p class="description">unit: Posts</p>
+            </div>
+    
+            <div class="scoreboard-item title-value">
+                <h4>Total Views</h4>
+                <p class="positive">144</p>
+                <p class="description">previous month: 132</p>
+            </div>
+    
+            <div class="scoreboard-item title-value goal-meter-inverse" data-control="goal-meter" data-value="88">
+                <h4>goal meter</h4>
+                <p>88%</p>
+                <p class="description">37 posts remain</p>
+            </div>
+        </div>
+    </div>
+</p>
+
+<div data-control="toolbar">
+    <div class="dropdown dropdown-fixed">
+        <a href="#" data-toggle="dropdown" class="btn btn-primary oc-icon-plus">Create New</a>
+    
+        <ul class="dropdown-menu" role="menu" data-dropdown-title="Add something large">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="<?= Backend::url('omc/publisher/contents/create') ?>" class="oc-icon-copy">News</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="<?= Backend::url('omc/publisher/contents/create') ?>" class="oc-icon-briefcase">Articles</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="<?= Backend::url('omc/publisher/contents/create') ?>" class="oc-icon-calendar">Events</a></li>
+        </ul>
+    </div>
+    <button
+        class="btn btn-danger oc-icon-trash-o"
+        disabled="disabled"
+        onclick="$(this).data('request-data', {
+            checked: $('.control-list').listWidget('getChecked')
+        })"
+        data-request="onDelete"
+        data-request-confirm="<?= e(trans('backend::lang.list.delete_selected_confirm')) ?>"
+        data-trigger-action="enable"
+        data-trigger=".control-list input[type=checkbox]"
+        data-trigger-condition="checked"
+        data-request-success="$(this).prop('disabled', true)"
+        data-stripe-load-indicator>
+        <?= e(trans('backend::lang.list.delete_selected')) ?>
+    </button>
+</div>
+

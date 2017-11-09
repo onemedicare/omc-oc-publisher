@@ -1,0 +1,29 @@
+columns:
+    token:
+        label: token
+        type: text
+        searchable: true
+        sortable: true
+    type:
+        label: type
+        type: text
+        searchable: true
+        sortable: true
+    name:
+        label: name
+        type: text
+        searchable: true
+        sortable: true
+    title:
+        label: title
+        type: text
+        searchable: true
+        sortable: true
+    status:
+        label: status
+        type: text
+    created_at:
+        label: created_at
+        type: timesince
+        searchable: true
+        sortable: true

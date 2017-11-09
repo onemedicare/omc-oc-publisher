@@ -1,0 +1,33 @@
+fields:
+    user_details_section:
+        label: 'Approval'
+        type: section
+        comment: 'Defines how contents are approved.'
+    approver_1_name:
+        label: 'Approver 1 Name'
+        span: left
+        type: text
+        required: true
+    approver_1_email:
+        label: 'Approver 1 Email Address'
+        span: right
+        type: text
+        required: true
+    approver_2_name:
+        label: 'Approver 2 Name'
+        span: left
+        type: text
+    approver_2_email:
+        label: 'Approver 2 Email Address'
+        span: right
+        type: text
+    approval_method:
+        label: 'Approval method'
+        span: left
+        type: radio
+        required: true
+        options:
+            all: All must approve, disregard sequence
+            either: Either 1 must approve
+            after: Approver 1 must approve first, then approver 2
+            

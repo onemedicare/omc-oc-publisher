@@ -1,0 +1,28 @@
+fields:
+    token:
+        label: 'Token Number'
+        oc.commentPosition: ''
+        span: auto
+        context:
+            - preview
+        type: text
+        comment: 'Token number ia a unique identification of a record. It is auto generated and could not be modified.'
+    email:
+        label: Email
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    tel:
+        label: 'Tel No'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    type:
+        label: Type
+        oc.commentPosition: ''
+        options:
+            Feedback: Feedback
+            Enquiry: Enquiry
+            Complaint: Complaint
+        span: auto
+        type: dropdown

@@ -1,0 +1,42 @@
+plugin:
+    name: Publisher
+    description: 'Simple Publishing Plugin for OMSB Website'
+    author: Omc
+    icon: oc-icon-codepen
+    homepage: 'http://www.one-medicare.com'
+permissions:
+    manage_contents:
+        tab: OMC
+        label: 'Manage Contents'
+    manage_tags:
+        tab: OMC
+        label: 'Manage Tags'
+    manage_feedbacks:
+        tab: OMC
+        label: 'Manage Feedbacks'
+navigation:
+    main-menu-item:
+        label: 'omc.publisher::lang.plugin.name'
+        url: omc/publisher/contents
+        icon: icon-codepen
+        permissions:
+            - manage_contents
+        sideMenu:
+            side-menu-item-content:
+                label: Contents
+                url: omc/publisher/contents
+                icon: icon-sitemap
+                permissions:
+                    - manage_contents
+            side-menu-item-tag:
+                label: Tags
+                url: omc/publisher/tags
+                icon: icon-tags
+                permissions:
+                    - manage_tags
+            feedback:
+                label: Contacts
+                url: omc/publisher/feedbacks
+                icon: icon-envelope-o
+                permissions:
+                    - manage_feedbacks
